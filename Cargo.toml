@@ -1,0 +1,33 @@
+[package]
+name = "dbd-autoclicker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+image = "0.25.6"
+imageproc = "0.25.0"
+enigo = "0.3.0"
+screenshots = "0.8.10"
+device_query = "3.0.1"
+tracing = "0.1"
+tracing-futures = "0.2.5"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing-appender = "0.2.3"
+clap_derive = "4.5.18"
+anyhow = "1.0.93"
+chrono = "0.4.38"
+async-channel = "2.3.1"
+
+[dependencies.clap]
+version = "4.5.21"
+features = [ "derive" ]
+
+[dependencies.tokio]
+version = "1.44.2"
+features = [
+	"rt",
+	"rt-multi-thread",
+	"io-std",
+	"macros",
+	"fs"
+]
